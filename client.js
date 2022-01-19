@@ -11,6 +11,9 @@ const connect = function () {
   conn.on('connect', () => {
     console.log('Connected to the server!');
     conn.write('Name: ALI');
+  //   setTimeout(() => {
+  //   conn.write('Move: up')
+  // }, 500);
   });
 
   conn.on('data', (data) => {
@@ -24,3 +27,5 @@ console.log("Connecting ...");
 
 
 module.exports = {connect};
+//connect();
+
